@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HomePage</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <script
+      src="https://www.google.com/recaptcha/api.js?_v=20230104175504"
+      async
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="header__logo"><img src="img/logo.svg" alt="" /></a>
+          <div class="header__menu menu">
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Why Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link _active">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="fullscreen">
+          <picture
+            ><source srcset="img/pexels.webp" type="image/webp" />
+            <img class="fullscreen__image" src="img/pexels.jpg" alt="Image"
+          /></picture>
+          <div class="fullscreen__container">
+            <div class="fullscreen__body">
+              <h1 class="fullscreen__title">
+                Sound Therapy is painless with no side effects
+              </h1>
+              <button class="fullscreen__button">Get Details</button>
+              <div class="fullscreen__form form-fullscreen">
+                <form action="#" class="form">
+                  <h3 class="form-fullscreen__title">Contact us today</h3>
+                  <div class="form__row">
+                    <label class="form__label" for="name">Name</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                      value=""
+                      required
+                      aria-required="true"
+                      pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"
+                      title="firstname lastname"
+                    />
+                  </div>
+                  <div class="form__row">
+                    <label class="form__label" for="phone">Mobile number</label>
+                    <input
+                      class="form__input tel"
+                      id="phone"
+                      type="text"
+                      value=""
+                      name="phone"
+                      placeholder="+91(000)000-00-00"
+                      required
+                    />
+                  </div>
+                  <div class="form__row">
+                    <label class="form__label" for="email"
+                      >Email
+                      <span class="email-optional">[Optional]</span></label
+                    >
+                    <input
+                      class="form__input"
+                      id="email"
+                      type="email"
+                      value=""
+                      name="email"
+                      placeholder="...@gmail.com"
+                    />
+                  </div>
+                  <p class="form__terms">
+                    By Clicking Enquire now, You agree to the
+                    <a
+                      href="https://aapkapainter.com/terms-and-conditions"
+                      class="form__terms-link"
+                      >Terms and Conditions</a
+                    >
+                  </p>
+                  <button
+                    type="submit"
+                    id="contactFormButton"
+                    class="form__button btn"
+                  >
+                    Enquire Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reasons">
+          <div class="reasons__container">
+            <div class="reasons__quote">
+              <div class="reasons__quote-image">
+                <picture
+                  ><source srcset="img/person.webp" type="image/webp" />
+                  <img src="img/person.jpg" alt="Person"
+                /></picture>
+              </div>
+              <blockquote class="reasons__quote-text">
+                “Dr Jacab solved my depression with no medication in 20 days”
+              </blockquote>
+            </div>
+            <h2 class="reasons__title title">3 Reasons why us</h2>
+            <ul class="reasons__list">
+              <li class="reasons__item text">
+                <span>1.</span>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </li>
+              <li class="reasons__item text">
+                <span>2.</span>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </li>
+              <li class="reasons__item text">
+                <span>3.</span>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </li>
+            </ul>
+            <p class="reasons__text text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="reasons__button btn">Book an appointment</a>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact__container">
+            <div class="contact__left">
+              <div id="map_container" class="map container-fluid">
+                <iframe
+                  class="contact__map"
+                  id="ymap_lazy"
+                  async
+                  data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.283505555924!2d72.8314144!3d19.139063500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a575851eef%3A0xc1f40fa3560f4ce5!2s360%20Degrees%2C%20Andheri%20West%2C%20Mumbai!5e0!3m2!1sru!2sua!4v1671800783064!5m2!1sru!2sua"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="contact__links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Send Feedback</a>
+              </div>
+            </div>
+            <div class="contact__content">
+              <h2 class="contact__title title" data-da=".contact, 991.98, 0">
+                Contact Us
+              </h2>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <span>Phone</span>
+                  <a href="tel:1234567890" class="contact__link"
+                    >123-456-7890</a
+                  >
+                </li>
+                <li class="contact__item">
+                  <span>Whatsapp</span>
+                  <a href="#" class="contact__link">123-456-7890</a>
+                </li>
+                <li class="contact__item">
+                  <span>Email</span>
+                  <a href="mailto:test@gmail.com" class="contact__link"
+                    >test@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="bar">
+          <div class="bar__container">
+            <div class="bar__row">
+              <a href="#" class="bar__item">
+                <img class="bar__img" src="img/icons/whatsapp.svg" alt="Icon" />
+                <p class="bar__text">Whasapp</p>
+              </a>
+              <a href="#" class="bar__item">
+                <img class="bar__img" src="img/icons/phone.svg" alt="Icon" />
+                <p class="bar__text">Call Now</p>
+              </a>
+              <a href="#" class="bar__item">
+                <img class="bar__img" src="img/icons/calendar.svg" alt="Icon" />
+                <p class="bar__text">Appointment</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__copy">©Copyright 2022. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
